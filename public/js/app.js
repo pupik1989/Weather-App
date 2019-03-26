@@ -12,7 +12,7 @@ weatherForm.addEventListener('submit', (e) => {
     p2.textContent = ''
     e.preventDefault()
     const location = place.value
-    fetch('http://localhost:3000/weather?address=' + location).then((res) => { 
+    fetch('/weather?address=' + location).then((res) => { 
     res.json().then((data) => {
         if(data){
             p1.textContent = data.forcast.daily + '  and temperature is: ' + data.forcast.temperature
