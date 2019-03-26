@@ -34,7 +34,7 @@ app.get('/about', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        msg: 'help me!!',
+        msg: 'Test',
         title:'Help Page',
         name: 'Kodesh Pupik'
 
