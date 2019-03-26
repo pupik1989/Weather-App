@@ -1,4 +1,4 @@
-console.log('client side JS script is loaded.')
+
 
 const weatherForm = document.querySelector('form')
 const place = document.querySelector('input')
