@@ -15,7 +15,7 @@ weatherForm.addEventListener('submit', (e) => {
     fetch('/weather?address=' + location).then((res) => { 
     res.json().then((data) => {
         if(data){
-            p1.textContent = data.forcast.daily + '  and temperature is: ' + data.forcast.temperature
+            p1.textContent = data.forcast
         }else {
             p2.textContent = 'Error, can not find place.'
         }

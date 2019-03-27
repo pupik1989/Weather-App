@@ -26,11 +26,8 @@ const forecast = (a, b, callback) => {
         } else if(body.error){
             callback('Wrong parameters.',undefined)
         }else {
-            callback(undefined, {
-                temperature: body.currently.temperature,
-                precipProbability: body.currently.precipProbability,
-                daily: body.daily.data[0].summary
-            })
+            callback(undefined, "The temperature is " + body.currently.temperature + " ,Probability to rain is " + body.currently.precipProbability +", and the daily is " + body.daily.data[0].summary
+                )
         }
     })
 }
